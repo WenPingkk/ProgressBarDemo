@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressView">
+        <attr name="progressTitle" format="string"/>
+        <attr name="progressLeftText" format="string"/>
+        <attr name="progressRightText" format="string"/>
+        <attr name="currentProgress" format="integer"/>
+        <attr name="maxProgress" format="integer"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wenping.progressbardemo.ProgressView
+        android:id="@+id/viewDatasProgress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:currentProgress="10"
+        app:maxProgress="100"
+        app:progressLeftText="已用:"
+        app:progressRightText="未用:"
+        app:progressTitle="内存:"
+        />
+
+    <com.wenping.progressbardemo.ProgressView
+        android:id="@+id/viewUserProgress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:currentProgress="10"
+        app:maxProgress="100"
+        app:progressLeftText="在线:"
+        app:progressRightText="离线:"
+        app:progressTitle="用户数量:"
+        />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/viewProgressTitle"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="内存"/>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/viewProgressTitle"
+        >
+
+        <ProgressBar
+            android:id="@+id/viewProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:progressDrawable="@drawable/progress_horizontal1"/>
+
+        <TextView
+            android:id="@+id/viewLeftText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.4M已用"/>
+
+        <TextView
+            android:id="@+id/viewRightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="21.4M可用"/>
+    </RelativeLayout>
+</RelativeLayout>
